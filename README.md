@@ -88,6 +88,6 @@ The problems that Pipenv seeks to solve are multi-faceted:
 - **Hashes** are used everywhere, always. **Security**. Automatically expose security vulnerabilities.
 - **Strongly encourage the use of the latest versions of dependencies to minimize security risks arising from outdated components.**
 - Give you insight into your dependency graph (e.g. $ **pipenv graph**).
-- Streamline development workflow by loading **.env** files.
+- Streamline development workflow by loading **.env** files. **Recommend to add .env into .gitignore file when you are done with development**
 
 :point_right: https://pipenv.readthedocs.io/en/latest/
