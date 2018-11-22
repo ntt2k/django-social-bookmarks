@@ -83,7 +83,7 @@ http://localhost:8080/
 
 The problems that Pipenv seeks to solve are multi-faceted:
 
-- You no longer need to use pip and virtualenv separately. They work together. Even in Docker container I still recommend to use it.
+- You no longer need to use pip and virtualenv separately. They work together. Even in **Docker container** I still recommend to use it.
 - Managing a requirements.txt file can be problematic, so Pipenv uses **Pipfile** and **Pipfile.lock** to separate abstract dependency         declarations from the last tested combination.
 - **Hashes** are used everywhere, always. **Security**. Automatically expose security vulnerabilities.
 - **Strongly encourage the use of the latest versions of dependencies to minimize security risks arising from outdated components.**
