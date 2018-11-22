@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: ./app
-    command: gunicorn bookmarks.wsgi:application --bind 0.0.0.0:5000
+    command: pipenv run gunicorn bookmarks.wsgi:application --bind 0.0.0.0:5000
     volumes:
       - ./app:/usr/src/app
       - static_volume:/usr/src/app/staticfiles

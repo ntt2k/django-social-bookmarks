@@ -4,18 +4,18 @@ Django Social Bookmarks is an open-source example boilerplate code written in Py
 
 It's a bookmark application similar to Delicious or Pinboard developed using the latest Python Django web technologies: Django 1.11 LTS, PostgreSQL, Gunicorn, Nginx together with best practice DevOps Docker container.
 
-![Screenshot](screenshots/logo.png)
-![Architecture](screenshots/architecture_diagram_django.png)
+![screenshot](screenshots/logo.png)
+![architecture](screenshots/architecture_diagram_django.png)
 
-### TL;DR
-### FAQ: Why are we doing this?
+#### TL;DR
+#### - FAQ: Why are we doing this?
 I've successfully setup this stack a couple times now and have seen it done in professional settings so the only reason is basically "monkey see monkey do". Why not simply run a Django or Flask server that takes requests straight from port 80 instead of the reverse proxy?
 
-### Answer:
-This reddit thread simply answered it -->
+#### - Answer:
+This reddit thread simply answered it :point_right:
 https://www.reddit.com/r/Python/comments/68phcu/why_nginxgunicornflask/
 
-## Installation instructions
+### Installation instructions
 
 #### Prerequisite
 
@@ -34,7 +34,7 @@ cd django-social-bookmarks
 docker-compose up
 ```
 
-### Login Social Bookmarks Web App
+#### Login Social Bookmarks Web App
 
 http://localhost:8080/
 
@@ -42,16 +42,23 @@ http://localhost:8080/
 | ------ | ------ |
 | admin | adminpassword |
 
-![Demo 1](screenshots/demo1.png)
-![Demo 2](screenshots/demo2.png)
+![demo 1](screenshots/demo1.png)
+![demo 2](screenshots/demo2.png)
+
+#### :star: Automatic generate the current app models visualization (built-in feature)
+![models visualized](app/app_models_visualized.svg)
+
+#### :star: Automatic run security check report (built-in feature)
+![folder tree](screenshots/tree.png)
+![security report](screenshots/security-report.png)
 
 ### The 12 Factors of App Methodology Microservices check-list
 
-https://blog.scottlogic.com/2017/07/17/successful-microservices-with-12factor-app.html
+:point_right: https://blog.scottlogic.com/2017/07/17/successful-microservices-with-12factor-app.html
 
-https://www.cuelogic.com/blog/12-factor-design-methodology-and-cloud-native-applications
+:point_right: https://www.cuelogic.com/blog/12-factor-design-methodology-and-cloud-native-applications
 
-https://hub.packtpub.com/how-to-build-12-factor-design-microservices-on-docker-part-1/
+:point_right: https://hub.packtpub.com/how-to-build-12-factor-design-microservices-on-docker-part-1/
 
 | # | Factor | Description | Status
 | ------ | :------: | :------ | :------: |
@@ -66,4 +73,4 @@ https://hub.packtpub.com/how-to-build-12-factor-design-microservices-on-docker-p
 | 9 | Disposability | Fast startup and shutdown are advocated for a more robust and resilient system. | :white_check_mark:
 | 10 | Dev/Prod parity | All environments should be as similar as possible. | :white_check_mark:
 | 11 | Logs | Applications should produce logs as event streams and leave the execution environment to aggregate. | :x:
-| 12 | Admin Processes | Any needed admin tasks should be kept in source control and packaged with the application. | :x:
+| 12 | Admin Processes | Any needed admin tasks should be kept in source control and packaged with the application. | :white_check_mark:
