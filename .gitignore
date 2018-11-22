@@ -1,0 +1,10 @@
+__pycache__
+.vscode
+.venv
+venv
+
+# normally you dont want to include .env secret environment password file in git
+# but I leave it here but commented out as an example
+# .env
+
+*.pyc

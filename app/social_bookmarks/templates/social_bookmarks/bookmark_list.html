@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Latest bookmarks{% endblock %}
+
+{% block heading %}
+    <h2>Latest bookmarks</h2>
+{% endblock %}
+
+{% block content %}
+    <ul class="list-unstyled">
+        {% for bookmark in bookmarks %}
+            <li class="well well-sm">{% include "social_bookmarks/bookmark.html" %}</li>
+            {% empty %}
+            <li>No bookmarks. :(</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

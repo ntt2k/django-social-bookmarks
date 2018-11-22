@@ -1,0 +1,14 @@
+{% extends "social_bookmarks/bookmark_list.html" %}
+{% load social_bookmarks_tags %}
+
+{% block title %}{{ owner.username }}'s bookmarks{% endblock %}
+
+{% block heading %}
+    <h2>{{ owner.username }}'s bookmarks<br>
+        <small>{{ bookmarks.count }} bookmarks in total</small>
+    </h2>
+{% endblock %}
+
+{% block sidebar %}
+  {% tagcloud owner %}
+{% endblock %}

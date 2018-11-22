@@ -1,0 +1,24 @@
+<a class="lead" href="{{ bookmark.url }}">{{ bookmark.title }}</a>
+
+{% if bookmark.description %}
+    <br>{{ bookmark.description|linebreaksbr }}
+{% endif %}
+
+{% if not bookmark.is_public %}
+    <br><span class="label label-warning">private</span>
+{% else %}
+    <br>
+{% endif %}
+
+{% if bookmark.tags.count %}
+    {% for tag in bookmark.tags.all %}
+        <span class="label label-primary">{{ tag|lower }}</span>&nbsp;
+    {% endfor %}
+{% endif %}
+    <br>by <a href="{% url "social_bookmark_user" bookmark.owner.username %}">
+        {{ bookmark.owner.username }}</a>
+        {{ bookmark.date_created|timesince }} ago
+    {% if bookmark.owner == user or user.is_superuser %}
+        <br><a class="btn btn-default btn-xs" role="button"
+            href="{% url "social_bookmark_edit" bookmark.pk %}">Edit bookmark</a>
+    {% endif %}
