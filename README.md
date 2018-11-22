@@ -29,8 +29,8 @@ Django Social Bookmarks is very easy to install and deploy with Docker container
 By default, the main web app will expose port 8080, so change this within the docker-compose file if necessary. When ready, simply use the docker-compose.yml to build and deploy the images.
 
 ```sh
-git clone https://github.com/ntt2k/OnlineBanking.git
-cd OnlineBanking
+git clone https://github.com/ntt2k/django-social-bookmarks.git
+cd django-social-bookmarks
 docker-compose up
 ```
 
