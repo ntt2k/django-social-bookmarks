@@ -74,3 +74,20 @@ http://localhost:8080/
 | 10 | Dev/Prod parity | All environments should be as similar as possible. | :white_check_mark:
 | 11 | Logs | Applications should produce logs as event streams and leave the execution environment to aggregate. | :x:
 | 12 | Admin Processes | Any needed admin tasks should be kept in source control and packaged with the application. | :white_check_mark:
+
+### Release Notes
+
+#### Improvements
+
+- This boilerplate code used extensively new python package manager **Pipenv**. Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. It automatically creates and manages a virtualenv for your projects, as well as adds/removes packages from your Pipfile as you install/uninstall packages. It also generates the ever-important Pipfile.lock, which is used to produce **deterministic builds**.
+
+The problems that Pipenv seeks to solve are multi-faceted:
+
+- You no longer need to use pip and virtualenv separately. They work together. Even in Docker container I still recommend to use it.
+- Managing a requirements.txt file can be problematic, so Pipenv uses **Pipfile** and **Pipfile.lock** to separate abstract dependency         declarations from the last tested combination.
+- **Hashes** are used everywhere, always. **Security**. Automatically expose security vulnerabilities.
+- **Strongly encourage the use of the latest versions of dependencies to minimize security risks arising from outdated components.**
+- Give you insight into your dependency graph (e.g. $ **pipenv graph**).
+- Streamline development workflow by loading **.env** files.
+
+:point_right: https://pipenv.readthedocs.io/en/latest/
