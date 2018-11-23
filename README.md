@@ -48,7 +48,7 @@ http://localhost:8080/
 #### :star: Automatic generate the current app models visualization (built-in feature)
 ![models visualized](app/app_models_visualized.svg)
 
-#### :star: Automatic run security check report (built-in feature)
+#### :star: Automatic run security check report for vulnerabilities and asserts that PEP 508 requirements are being met by the current environment. (built-in feature)
 ![folder tree](screenshots/tree.png)
 ![security report](screenshots/security-report.png)
 
