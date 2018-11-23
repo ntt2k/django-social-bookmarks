@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED 1
 # set work directory
 WORKDIR /usr/src/app
 
-# install psycopg2
+# install system dependencies
 RUN apk update \
     && apk add gcc python3-dev musl-dev \
     && apk add postgresql-dev \
@@ -17,7 +17,7 @@ RUN apk update \
 # copy project
 COPY . /usr/src/app/
 
-# install dependencies
+# install python dependencies
 RUN pip install --upgrade pip
 RUN pip install pipenv
 # using latest pipenv Python package manager
