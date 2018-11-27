@@ -1,6 +1,6 @@
 # Django Social Bookmarks
-### The ultimate example boilerplate code for Django microservices with Docker
-Django Social Bookmarks is an open-source example boilerplate code written in Python that focuses on quick development and clean, pragmatic design with 12 Factors of App Methodology. (see design principle links section below)
+### The ultimate boilerplate code for Django microservices with Docker
+Django Social Bookmarks is an open-source boilerplate code written in Python that focuses on quick development and clean, pragmatic design with 12 Factors of App Methodology. (see design principle links section below)
 
 It's a bookmark application similar to Delicious or Pinboard developed using the latest Python Django web technologies: Django 1.11 LTS, PostgreSQL, Gunicorn, Nginx together with best practice DevOps Docker container.
 
